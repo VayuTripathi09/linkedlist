@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # Linked List Assignment
 
-**Name:** Krishna Sharma
+**Name:** Vayu Nandan Tripathi
 **Assignment:** Create a Linked List with JavaScript
 
 ## About Linked List
