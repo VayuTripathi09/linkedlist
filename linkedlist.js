@@ -10,7 +10,7 @@ class LinkedList {
         this.head = null;
     }
 
-    // Add a node at the beginning
+    
     addFirst(value) {
         const newNode = new Node(value);
 
@@ -18,17 +18,17 @@ class LinkedList {
         this.head = newNode;
     }
 
-    // Add a node at the end
+    
     addLast(value) {
         const newNode = new Node(value);
 
-        // If list is empty
+        
         if (this.head === null) {
             this.head = newNode;
             return;
         }
 
-        // Traverse to the last node
+        
         let current = this.head;
 
         while (current.next !== null) {
@@ -38,7 +38,7 @@ class LinkedList {
         current.next = newNode;
     }
 
-    // Delete the first node
+    
     deleteFirst() {
         if (this.head === null) {
             return;
@@ -47,14 +47,14 @@ class LinkedList {
         this.head = this.head.next;
     }
 
-    // Delete the last node
+    
     deleteLast() {
-        // Empty list
+        
         if (this.head === null) {
             return;
         }
 
-        // Only one node
+    
         if (this.head.next === null) {
             this.head = null;
             return;
@@ -62,7 +62,7 @@ class LinkedList {
 
         let current = this.head;
 
-        // Stop at the second-last node
+        
         while (current.next.next !== null) {
             current = current.next;
         }
@@ -70,7 +70,7 @@ class LinkedList {
         current.next = null;
     }
 
-    // Print the linked list
+
     print() {
         let current = this.head;
         let result = "";
@@ -84,7 +84,7 @@ class LinkedList {
         console.log(result);
     }
 
-    // Bonus: Find a value
+
     find(value) {
         let current = this.head;
 
@@ -99,13 +99,12 @@ class LinkedList {
         return false;
     }
 
-    // Bonus: Delete first node containing value
+    
     delete(value) {
         if (this.head === null) {
             return;
         }
-
-        // If value is in the first node
+        
         if (this.head.value === value) {
             this.head = this.head.next;
             return;
@@ -125,9 +124,6 @@ class LinkedList {
 }
 
 
-// =====================
-// TESTING
-// =====================
 
 const list = new LinkedList();
 
