@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Linked List Assignment
 
 **Name:** Krishna Sharma
@@ -96,3 +97,6 @@ linked-list-assignment/
 ├── linkedlist.js
 └── README.md
 ```
+=======
+# linkedlist
+>>>>>>> 1b8ae61234f29447612c286aff3d6bfe2161c54e
