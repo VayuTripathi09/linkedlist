@@ -1,17 +1,17 @@
-<<<<<<< HEAD
 # Linked List Assignment
 
 **Name:** Vayu Nandan Tripathi
-**Assignment:** Create a Linked List with JavaScript
+**Admission Number:** 24SCSE1180366
+**Assignment Title:** Create a Linked List with JavaScript
 
 ## About Linked List
 
 A linked list is a linear data structure made up of nodes. Each node contains two parts:
 
-* **value** — stores the data.
-* **next** — stores the reference to the next node.
+* **Value** – stores the data.
+* **Next** – stores the reference to the next node.
 
-The linked list starts from a node called **head**. The last node points to `null`, which indicates the end of the list.
+The first node is called the **head**. The last node points to `null`.
 
 Example:
 
@@ -19,84 +19,146 @@ Example:
 10 → 20 → 30 → null
 ```
 
+## Classes Implemented
+
+### `Node`
+
+The `Node` class represents an individual node.
+
+```javascript
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+```
+
+### `LinkedList`
+
+The `LinkedList` class manages the linked list and contains the `head`.
+
 ## Methods Implemented
 
-The `LinkedList` class contains the following methods:
-
-1. `addFirst(value)` — Adds a new node at the beginning.
-2. `addLast(value)` — Adds a new node at the end.
-3. `deleteFirst()` — Deletes the first node.
-4. `deleteLast()` — Deletes the last node.
-5. `print()` — Prints all nodes in the linked list.
-6. `find(value)` — Checks whether a value exists in the list.
-7. `delete(value)` — Deletes the first node containing the given value.
+| Method            | Description                                 |
+| ----------------- | ------------------------------------------- |
+| `addFirst(value)` | Adds a node at the beginning                |
+| `addLast(value)`  | Adds a node at the end                      |
+| `deleteFirst()`   | Deletes the first node                      |
+| `deleteLast()`    | Deletes the last node                       |
+| `print()`         | Prints the complete linked list             |
+| `find(value)`     | Searches for a value in the list            |
+| `delete(value)`   | Deletes the first node containing the value |
 
 ## Example
 
-Starting list:
+### Adding at the Beginning
 
 ```text
+Before:
 10 → 20 → 30 → null
-```
 
-After `addFirst(5)`:
+addFirst(5)
 
-```text
+After:
 5 → 10 → 20 → 30 → null
 ```
 
-After `deleteFirst()`:
+### Adding at the End
 
 ```text
+Before:
 10 → 20 → 30 → null
+
+addLast(40)
+
+After:
+10 → 20 → 30 → 40 → null
 ```
 
-After `deleteLast()`:
+### Deleting from the Beginning
 
 ```text
+Before:
+10 → 20 → 30 → null
+
+deleteFirst()
+
+After:
+20 → 30 → null
+```
+
+### Deleting from the End
+
+```text
+Before:
+10 → 20 → 30 → null
+
+deleteLast()
+
+After:
 10 → 20 → null
 ```
+
+## Bonus Methods
+
+### Find
+
+```javascript
+list.find(20);  // true
+list.find(100); // false
+```
+
+### Delete by Value
+
+```javascript
+list.delete(20);
+```
+
+This deletes the **first node** containing the specified value.
 
 ## Example Output
 
 ```text
-Empty list:
-null
-
-Adding elements:
 10 → 20 → 30 → null
-
-Add at beginning:
 5 → 10 → 20 → 30 → null
-
-Delete from beginning:
 10 → 20 → 30 → null
-
-Delete from end:
 10 → 20 → null
-
-Find:
-true
-false
-
-Delete value 20:
-10 → null
 ```
 
-## Technologies Used
+## Testing
 
-* JavaScript
-* Node.js
-* Git & GitHub
+The implementation has been tested for:
 
-## Repository Structure
+* Empty linked list
+* Linked list with one node
+* Linked list with multiple nodes
+* Adding at the beginning
+* Adding at the end
+* Deleting from the beginning
+* Deleting from the end
+* Finding a value
+* Deleting a value
+
+## Project Structure
 
 ```text
-linked-list-assignment/
+linkedlist/
 │
 ├── linkedlist.js
 └── README.md
 ```
-=======
-# linkedlist
->>>>>>> 1b8ae61234f29447612c286aff3d6bfe2161c54e
+
+## How to Run
+
+Make sure Node.js is installed, then run:
+
+```bash
+node linkedlist.js
+```
+
+---
+
+**Submitted by:**
+**Vayu Nandan Tripathi**
+**Admission Number:** 24SCSE1180366
